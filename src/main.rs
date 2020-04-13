@@ -1,3 +1,3 @@
 fn main() {
-    numbers::print();
+    numbers::print(5);
 }
