@@ -1,11 +1,12 @@
 pub fn print() {
-    let numbers = vec![1, 2, 3, 4, 5];
+    let vector_numbers = vec![1, 2, 3, 4, 5];
+    output_sequence(&vector_numbers);
 
-    output_sequence(numbers);
-    output_sequence(numbers); // <- Will error here
+    let array_numbers = [1, 2, 3, 4, 5];
+    output_sequence(&array_numbers);
 }
 
-fn output_sequence(numbers:Vec<u8>) {
+fn output_sequence(numbers: &[u8]) {
     for n in numbers {
         println!("{}", n);
     }
